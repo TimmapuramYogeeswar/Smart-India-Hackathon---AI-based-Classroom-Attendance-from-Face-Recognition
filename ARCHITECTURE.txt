@@ -1,0 +1,30 @@
+CLASSROOM ATTENDANCE SYSTEM
+
+                 ┌─────────────────────────┐
+                 │      Teacher Browser     │
+                 │  Dashboard / Registration│
+                 └────────────┬────────────┘
+                              │ HTTP
+                              ▼
+                 ┌─────────────────────────┐
+                 │       Flask Backend     │
+                 │       routes.py         │
+                 └───────┬─────────┬───────┘
+                         │         │
+                image    │         │ attendance
+                         ▼         ▼
+              ┌──────────────┐  ┌─────────────┐
+              │ OpenCV Face  │  │   SQLite    │
+              │  Detection   │  │  Database   │
+              └──────┬───────┘  └──────┬──────┘
+                     │                  │
+                     └────────┬─────────┘
+                              ▼
+                    ┌──────────────────┐
+                    │ Teacher verifies │
+                    │ Present / Absent │
+                    └────────┬─────────┘
+                             ▼
+                       ┌────────────┐
+                       │ CSV Export │
+                       └────────────┘
